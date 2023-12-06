@@ -26,6 +26,4 @@ class Jadwal extends CI_Controller {
         );
 		$this->load->view('jadwal', $data); 
 	}
-    
-    
 }

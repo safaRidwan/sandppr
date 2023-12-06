@@ -27,7 +27,7 @@
                                         data-bs-toggle="dropdown">
                                         <div class="avatar avatar-online">
                                             <img
-                                                src="<?= site_url('asset/sneat') ?>/assets/img/avatars/profil.png"
+                                                src="<?= site_url('asset/drivin-1') ?>/img/profil.png"
                                                 alt="alt"
                                                 class="w-px-40 h-auto rounded-circle"/>
                                         </div>

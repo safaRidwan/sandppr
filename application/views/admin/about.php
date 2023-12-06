@@ -266,7 +266,7 @@
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Profil Prusahaan</h5>
-            <small class="text-muted float-end">www.sandpaper.com</small>
+            <small class="text-muted float-end">www.sandpaperholidaytrans.id</small>
         </div>
         <div class="card-body">
             <form action="<?= base_url('admin/about/perbarui') ?>" method="post" enctype="multipart/form-data">
@@ -279,7 +279,6 @@
                         </span>
                         <input type="number" class="form-control" name="member" value="<?= $konfigabout->member; ?>"
                             placeholder="Jumlah Member">
-                        <span class="input-group-text">Jumlah Member</span>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -290,7 +289,6 @@
                         </span>
                         <input type="number" class="form-control" name="armada" value="<?= $konfigabout->armada; ?>"
                             placeholder="Jumlah Armada">
-                        <span class="input-group-text">Jumlah Armada</span>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -301,7 +299,6 @@
                         </span>
                         <input type="number" class="form-control" name="perjalanan"
                             value="<?= $konfigabout->perjalanan; ?>" placeholder="Jumlah Perjalanan">
-                        <span class="input-group-text">Jumlah Perjalanan</span>
                     </div>
                 </div>
 

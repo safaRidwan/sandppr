@@ -96,7 +96,7 @@
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Konfigurasi</h5>
-            <small class="text-muted float-end">www.sandpaper.com</small>
+            <small class="text-muted float-end">www.sandpaperholidaytrans.id</small>
         </div>
         <div class="card-body">
             <form action="<?= base_url('admin/konfigurasi/update') ?>" method="post">
@@ -184,7 +184,6 @@
                         <i class="bx bxs-book-content"></i></span>
                         </span>
                         <input type="text" class="form-control" placeholder="Senin - Jumat" name="hari_buka" value="<?= $konfig->hari_buka; ?>">
-                        <span class="input-group-text">buka hari apa aja min?</span>
                         <span class="input-group-text" placeholder="senin - jumat"></span>
                     </div>
                 </div>
@@ -195,7 +194,6 @@
                         <i class="bx bxs-time"></i></span>
                         </span>
                         <input type="text" class="form-control" placeholder="07.00 - 22.00" name="waktu_buka" value="<?= $konfig->waktu_buka; ?>">
-                        <span class="input-group-text">jam berapa sampai jam berapa?</span>
                         <span class="input-group-text" ></span>
                     </div>
                 </div>
