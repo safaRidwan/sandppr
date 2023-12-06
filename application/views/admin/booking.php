@@ -8,7 +8,7 @@
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Booking Armada <?php echo $konten->judul; ?> ?</h5>
-            <small class="text-muted float-end">www.sandpaper.com</small>
+            <small class="text-muted float-end">www.sandpaperholidaytrans.id</small>
         </div>
         <div class="card-body">
             <form action="<?= base_url('admin/booking/simpan') ?>" method="post">
@@ -70,7 +70,7 @@
                     <th>Tanggal Mulai</th>
                     <th>Tanggal Berakhir</th>
                     <th>Client</th>
-                    <th>Kerengan</th>
+                    <th>Keterangan</th>
                     <th>Hapus</th>
                 </tr>
             </thead>
