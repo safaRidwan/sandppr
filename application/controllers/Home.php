@@ -24,7 +24,8 @@ class Home extends CI_Controller {
         $this->db->from('konten a');
         $this->db->join('kategori b','a.id_kategori=b.id_kategori','left');
         $this->db->join('user c','a.username=c.username','left');
-        $this->db->order_by('judul','ASC');
+        $this->db->order_by('id_konten','DESC');
+        $this->db->limit(3);
         $konten = $this->db->get()->result_array();
         $data = array(
             'judul_halaman' => 'Beranda | Sandpaper Holiday Trans',

@@ -26,8 +26,6 @@ class Konten extends CI_Controller {
 		$this->template->load('template_admin','admin/konten_index',$data);
 	}
 
-
-
     public function simpan(){
         $namafoto = date('YmdHis').'.jpg';
         $config['upload_path']      = 'asset/upload/konten/';
@@ -80,6 +78,7 @@ class Konten extends CI_Controller {
         ');
         redirect('admin/konten');
     }
+
 
 
 

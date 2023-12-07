@@ -22,7 +22,7 @@
                     
                     <div class="col mb-3">
                         <label class="form-label">Nama Kategori</label>
-                        <input type="text" class="form-control" placeholder="Nama Kategori" name="nama_kategori">
+                        <input type="text" class="form-control" placeholder="Nama Kategori" name="nama_kategori" required>
                     </div>
 
                 </div>

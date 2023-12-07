@@ -269,7 +269,7 @@
             <small class="text-muted float-end">www.sandpaperholidaytrans.id</small>
         </div>
         <div class="card-body">
-            <form action="<?= base_url('admin/about/perbarui') ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('admin/about/perbarui') ?>" method="post">
 
                 <div class="mb-3">
                     <label class="form-label">Jumlah Member</label>

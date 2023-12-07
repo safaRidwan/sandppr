@@ -185,17 +185,11 @@ class About extends CI_Controller {
     }
 
 
-
-
-
-
-
     public function perbarui(){
-        $where = array('id_about'   => 1);
+        $where = array('id_about'   => 5);
         $data = array(
             'visi' => $this->input->post('visi'),
             'misi' => $this->input->post('misi'),
-            'youtube' => $this->input->post('youtube'),
             'member' => $this->input->post('member'),
             'armada' => $this->input->post('armada'),
             'perjalanan' => $this->input->post('perjalanan'),
