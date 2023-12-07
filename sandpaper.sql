@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2023 at 04:55 AM
+-- Generation Time: Dec 07, 2023 at 05:47 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -41,7 +41,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id_about`, `visi`, `misi`, `member`, `armada`, `perjalanan`) VALUES
-(5, 'Menjadi pemimpin global dalam penyediaan produk abrasif berkualitas tinggi yang memberikan solusi tepat waktu untuk kebutuhan industri, konstruksi, dan manufaktur.', '1. Kualitas Terbaik: Kami berkomitmen untuk menghasilkan produk abrasif dengan kualitas terbaik yang', '178', '16', '557');
+(5, '<p>Menjadi pemimpin global dalam penyediaan produk abrasif berkualitas tinggi yang memberikan solusi tepat waktu untuk kebutuhan industri, konstruksi, dan manufaktur.</p>', '<p>Kualitas Terbaik: Kami berkomitmen untuk menghasilkan produk abrasif dengan kualitas terbaik yang</p>', '89', '16', '557');
 
 -- --------------------------------------------------------
 
@@ -202,7 +202,7 @@ CREATE TABLE `konfigurasi` (
   `no_wa` varchar(30) NOT NULL,
   `hari_buka` varchar(30) NOT NULL,
   `waktu_buka` varchar(20) NOT NULL,
-  `contact_us` varchar(20) NOT NULL,
+  `contact_us` text NOT NULL,
   `maps` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -211,7 +211,7 @@ CREATE TABLE `konfigurasi` (
 --
 
 INSERT INTO `konfigurasi` (`id_konfigurasi`, `judul_website`, `profil_website`, `instagram`, `facebook`, `tiktok`, `youtube`, `email`, `alamat`, `no_wa`, `hari_buka`, `waktu_buka`, `contact_us`, `maps`) VALUES
-(1, 'SANDPAPER', 'SandPaper adalah perusahaan bus yang berkomitmen untuk memberikan pengalaman perjalanan yang menyenangkan dan nyaman bagi pelanggannya. Kami menyediakan berbagai layanan bus yang disesuaikan dengan kebutuhan pelanggan, mulai dari bus antarkota, bus pariwisata, hingga bus charter.\r\nSandpaper memiliki armada bus yang cukup lengkap, mulai dari bus kelas ekonomi, bisnis, hingga eksekutif. Bus-bus Sandpaper dilengkapi dengan fasilitas yang nyaman, seperti AC, TV, dan toilet.\r\n\r\n', 'https://www.instagram.com/sandpaper_trans_88/', '', '', '', 'sandpaper@gmail.com', 'Ngaliyan, Lalung, Jaten, Karanganyar', '81215137373', 'Setiap Hari', '07.00  -  18.00', 'Hubungi kami lewat n', 'https://maps.app.goo.gl/4yE6TDwZ9jyZEmKa7');
+(1, 'SANDPAPER', '<p>Sandpaper adalah perusahaan bus yang berkomitmen untuk memberikan pengalaman perjalanan yang menyenangkan dan nyaman bagi pelanggannya. Kami menyediakan berbagai layanan bus yang disesuaikan dengan kebutuhan pelanggan, mulai dari bus antarkota, bus pariwisata, hingga bus charter. Sandpaper memiliki armada bus yang cukup lengkap, mulai dari bus kelas ekonomi, bisnis, hingga eksekutif. Bus-bus Sandpaper dilengkapi dengan fasilitas yang nyaman, seperti AC, TV, dan toilet.</p>', 'https://www.instagram.com/sandpaper_trans_88/', '', '', '', 'sandpaper@gmail.com', 'Ngaliyan, Lalung, Jaten, Karanganyar', '81215137373', 'Setiap Hari', '07.00  -  18.00', '<p>Hubungi kami via whatsapp</p>', 'https://maps.app.goo.gl/4yE6TDwZ9jyZEmKa7');
 
 -- --------------------------------------------------------
 
@@ -237,7 +237,7 @@ CREATE TABLE `konten` (
 --
 
 INSERT INTO `konten` (`id_konten`, `judul`, `merk`, `kursi`, `keterangan`, `foto`, `slug`, `id_kategori`, `tanggal`, `username`) VALUES
-(1, 'Hamtaro', 'Mitsubishi', 35, 'Hamtaro adalah karakter fiksi dalam serial manga Jepang yang dikenal sebagai \"Tottoko Hamtaro\" atau \"Hamtaro: Little Hamsters, Big Adventures.\" Serial ini diciptakan oleh Ritsuko Kawai. ', '20231117044517.jpg', 'Hamtaro-adalah-karakter-fiksi-dalam-serial-manga-Jepang-yang-dikenal-sebagai-\"Tottoko-Hamtaro\"-atau-', 22, '2023-11-17', 'musa'),
+(1, 'Hamtaro', 'mazda', 50, '<p>Hamtaro adalah karakter fiksi dalam serial manga Jepang yang dikenal sebagai \"Tottoko Hamtaro\" atau \"Hamtaro: Little Hamsters, Big Adventures.\" Serial ini diciptakan oleh Ritsuko Kawai.</p>', '20231117044517.jpg', '<p>Hamtaro-adalah-karakter-fiksi-dalam-serial-manga-Jepang-yang-dikenal-sebagai-\"Tottoko-Hamtaro\"-at', 23, '2023-11-17', 'musa'),
 (2, 'Bisma', 'Mercedes Benz', 36, '\"Bisma\" bisa menjadi nama orang di kehidupan sehari-hari, nama karakter dalam suatu cerita, atau merujuk kepada sesuatu yang spesifik dalam konteks tertentu. Jika Anda memiliki konteks lebih lanjut atau pertanyaan spesifik tentang \"Bisma,\" silakan beri informasi tambahan sehingga saya dapat memberikan jawaban yang lebih relevan.', '20231117044742.jpg', '\"Bisma\"-bisa-menjadi-nama-orang-di-kehidupan-sehari-hari,-nama-karakter-dalam-suatu-cerita,-atau-mer', 24, '2023-11-17', 'musa'),
 (3, 'Jan Etes', 'Hino', 36, '\r\nDalam bahasa Jawa, \"jan etes\" berarti \"jangan ragu\" atau \"jangan takut\". Frasa ini sering digunakan untuk memberikan semangat atau motivasi kepada seseorang. Misalnya, jika seseorang sedang ragu untuk melakukan sesuatu, kita bisa mengatakan \"jan etes, pasti bisa!\" untuk menyemangatinya.', '20231120031912.jpg', '\r\nDalam-bahasa-Jawa,-\"jan-etes\"-berarti-\"jangan-ragu\"-atau-\"jangan-takut\".-Frasa-ini-sering-digunaka', 23, '2023-11-20', 'musa'),
 (4, 'Faqih', 'Mercedes Benz', 35, ' \"bus faqih\" merupakan istilah lokal atau spesifik, mungkin ada konteks khusus di suatu daerah atau komunitas tertentu yang tidak terdokumentasikan secara luas. Untuk informasi lebih lanjut, Anda dapat mencari informasi lokal atau memeriksa sumber-sumber yang berkaitan dengan transportasi di daerah atau komunitas tertentu.', '20231121045810.jpg', '-\"bus-faqih\"-merupakan-istilah-lokal-atau-spesifik,-mungkin-ada-konteks-khusus-di-suatu-daerah-atau-', 24, '2023-11-21', 'musa'),
@@ -405,13 +405,13 @@ ALTER TABLE `about2`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `caraousel`
 --
 ALTER TABLE `caraousel`
-  MODIFY `id_caraousel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_caraousel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `detail`
@@ -429,7 +429,7 @@ ALTER TABLE `home`
 -- AUTO_INCREMENT for table `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `konfigurasi`
@@ -441,7 +441,7 @@ ALTER TABLE `konfigurasi`
 -- AUTO_INCREMENT for table `konten`
 --
 ALTER TABLE `konten`
-  MODIFY `id_konten` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_konten` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `logo`
@@ -453,13 +453,13 @@ ALTER TABLE `logo`
 -- AUTO_INCREMENT for table `profil_team`
 --
 ALTER TABLE `profil_team`
-  MODIFY `id_profil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_profil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
